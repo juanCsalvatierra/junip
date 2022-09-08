@@ -1,2 +1,3 @@
-@import "./reset/variables", "./reset/reset", "./reset/layout",
-	"./reset/queries";
+@use "./base/reset";
+@use "./layout/layout";
+@use "./layout/queries";
