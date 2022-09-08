@@ -3,6 +3,10 @@
 		padding-left: 5rem;
 		padding-right: 5rem;
 	}
+
+	.cta__left {
+		max-width: 22.5rem;
+	}
 }
 
 @media screen and (max-width: 992px) {
@@ -24,8 +28,16 @@
 		flex-direction: column;
 	}
 
-	.cta__container {
-		flex-direction: column;
+	.cta {
+		&__container {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		&__left,
+		&__right {
+			min-width: 100%;
+		}
 	}
 
 	.footer__top {

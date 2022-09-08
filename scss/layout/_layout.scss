@@ -51,7 +51,7 @@
 		padding-bottom: 1.5rem;
 	}
 
-	&__p {
+	&__h4 {
 		padding-bottom: 1rem;
 	}
 
@@ -87,11 +87,11 @@
 	.gather {
 		padding-bottom: 3rem;
 
-		&__h2 {
+		&__h3 {
 			padding-bottom: 1rem;
 		}
 
-		&__h3 {
+		&__sub-h3 {
 			padding-bottom: 2rem;
 		}
 
@@ -105,7 +105,7 @@
 		display: flex;
 		justify-content: space-between;
 
-		&__h2 {
+		&__h3 {
 			padding-bottom: 1rem;
 		}
 
@@ -196,7 +196,7 @@
 		text-align: center;
 	}
 
-	&__h2 {
+	&__h3 {
 		padding-bottom: 3rem;
 		text-align: center;
 	}
@@ -226,15 +226,15 @@
 	padding-top: 6rem;
 	padding-bottom: 6rem;
 
-	&__h4 {
+	&__highlighted {
 		padding-bottom: 1rem;
 	}
 
-	&__h2 {
+	&__h3 {
 		padding-bottom: 1.5rem;
 	}
 
-	&__h5 {
+	&__h4 {
 		padding-bottom: 3rem;
 	}
 
@@ -280,8 +280,26 @@
 		justify-content: space-between;
 	}
 
-	&__p {
+	&__left {
+		max-width: 27.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	&__right {
+		width: 50%;
+	}
+
+	&__h2 {
+		padding-bottom: 1.5rem;
+	}
+
+	&__h4 {
 		padding-bottom: 3rem;
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: center;
 	}
 }
 

@@ -1,1 +1,85 @@
 @use "fonts" as *;
+
+h1 {
+	font-size: 4.5rem;
+	line-height: 5.265rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2.75rem;
+	line-height: 3.6575rem;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 2.25rem;
+	line-height: 2.9925rem;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 1.5rem;
+	line-height: 1.995rem;
+	font-weight: 400;
+}
+
+h5 {
+	font-size: 1.25rem;
+	line-height: 1.6625rem;
+	font-weight: 400;
+}
+
+h6 {
+	font-size: 1.125rem;
+	line-height: 1.4963rem;
+	font-weight: 700;
+}
+
+p,
+a {
+	font-size: 1rem;
+	line-height: 1.33rem;
+	font-weight: 400;
+}
+
+.hero__h1,
+.badges__h2,
+.gather__h3,
+.submi__h3,
+.footer__h6 {
+	text-transform: uppercase;
+}
+
+.gather__p,
+.testimonials__p,
+.card__month,
+.card__desc,
+.footer__p {
+	font-size: 1.125rem;
+	line-height: 1.4963rem;
+}
+
+.reviews__p {
+	font-size: 1.125rem;
+	line-height: 1.4963rem;
+	font-weight: 700;
+}
+
+.pricing__highlighted {
+	font-size: 1.75rem;
+	line-height: 2.3275rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.card__plan {
+	text-transform: uppercase;
+}
+
+.cta__h2 {
+	font-size: 4.5rem;
+	line-height: 5.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
