@@ -1,2 +1,65 @@
-@import "./reset/variables.scss";
-@import "./reset/reset.scss";
+@import "./reset/variables", "./reset/reset";
+
+.container {
+	max-width: 1320px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 1.375rem 0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.left {
+		&__ul {
+			display: flex;
+		}
+
+		&__img {
+			padding-right: 2rem;
+		}
+
+		&__li {
+			padding-right: 1.5rem;
+		}
+	}
+
+	.right {
+		display: flex;
+		gap: 8px;
+	}
+}
+
+.hero {
+	padding: 7rem 0;
+
+	&__container {
+		text-align: center;
+	}
+
+	&__h1,
+	&__line {
+		padding-bottom: 1.5rem;
+	}
+
+	&__p {
+		padding-bottom: 1rem;
+	}
+
+	&__buttons {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.scroll {
+	width: 100%;
+
+	&__ul {
+		display: flex;
+		justify-content: center;
+	}
+}
