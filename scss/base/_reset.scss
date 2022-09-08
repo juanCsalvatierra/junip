@@ -67,11 +67,6 @@ q:after {
 	content: none;
 }
 
-::selection {
-	background-color: var(--negro);
-	color: var(--blanco);
-}
-
 form,
 input,
 textarea,
