@@ -47,6 +47,7 @@ a {
 .badges__h2,
 .gather__h3,
 .submi__h3,
+.submi__h5,
 .footer__h6 {
 	text-transform: uppercase;
 }
@@ -81,5 +82,13 @@ a {
 	font-size: 4.5rem;
 	line-height: 5.4rem;
 	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.footer__privacy,
+.footer__copy {
+	font-size: 0.875rem;
+	line-height: 1.1638rem;
+	font-weight: 400;
 	text-transform: uppercase;
 }

@@ -53,6 +53,27 @@
 		text-align: center;
 		row-gap: 2rem;
 	}
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	h2,
+	h3 {
+		font-size: calc(1.35rem + 1.2vw);
+	}
+
+	h4 {
+		font-size: calc(1.275rem + 0.3vw);
+	}
+
+	.pricing__highlighted {
+		font-size: calc(1.3rem + 0.6vw);
+	}
+
+	.cta__h2 {
+		font-size: calc(1.575rem + 3.9vw);
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -85,6 +106,10 @@
 	.pricing__top,
 	.pricing__bottom {
 		grid-template-columns: 1fr;
+	}
+
+	h1 {
+		font-size: 3rem;
 	}
 }
 
