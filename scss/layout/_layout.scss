@@ -14,28 +14,29 @@
 	justify-content: space-between;
 	align-items: center;
 
-	.left {
-		&__ul {
-			display: flex;
-		}
-
-		&__logo {
-			padding-right: 2rem;
-		}
-
-		&__li {
-			padding-right: 1.5rem;
-		}
-	}
-
-	.right {
-		display: flex;
-		gap: 8px;
-	}
-
 	&__mobile {
 		display: none;
 	}
+}
+
+.left {
+	&__ul {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		padding-right: 2rem;
+	}
+
+	&__li {
+		padding-right: 1.5rem;
+	}
+}
+
+.right {
+	display: flex;
+	gap: 8px;
 }
 
 .hero {
@@ -78,53 +79,95 @@
 		display: flex;
 		justify-content: space-between;
 	}
+
+	&__left {
+		max-width: 56.25rem;
+		flex-shrink: 1;
+		padding-right: 24px;
+	}
+
+	&__right {
+		min-width: 14.25rem;
+
+		position: relative;
+	}
+
+	&__img {
+		max-width: 10.125rem;
+		width: 10.125rem;
+
+		position: absolute;
+	}
+
+	&__img:nth-child(1) {
+		bottom: -1.5625rem;
+		left: -10px;
+	}
+
+	&__img:nth-child(2) {
+		bottom: -8.125rem;
+		left: 4.25rem;
+	}
 }
 
 .services {
 	padding-top: 6rem;
 	padding-bottom: 6rem;
+}
 
-	.gather {
-		padding-bottom: 3rem;
+.gather {
+	padding-bottom: 3rem;
 
-		&__h3 {
-			padding-bottom: 1rem;
-		}
-
-		&__sub-h3 {
-			padding-bottom: 2rem;
-		}
-
-		&__row {
-			display: flex;
-			gap: 1.5rem;
-		}
+	&__h3 {
+		padding-bottom: 1rem;
 	}
 
-	.submi {
+	&__sub-h3 {
+		padding-bottom: 2rem;
+	}
+
+	&__row {
 		display: flex;
-		justify-content: space-between;
+		gap: 1.5rem;
+	}
 
-		&__h3 {
-			padding-bottom: 1rem;
-		}
+	&__img {
+		max-width: 37rem;
+		padding-bottom: 1rem;
+	}
 
-		&__line {
-			padding-top: 0.5rem;
-			padding-bottom: 1.5rem;
-		}
+	&__col {
+		flex: 1;
+	}
+}
 
-		&__item {
-			padding: 1.5rem;
-		}
+.submi {
+	display: flex;
+	justify-content: space-between;
 
-		&__item:nth-child(1) {
-			margin-bottom: 16px;
-		}
+	&__h3 {
+		padding-bottom: 1rem;
+	}
 
-		&__h5 {
-			padding-bottom: 1rem;
-		}
+	&__line {
+		padding-top: 0.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	&__col {
+		width: 40%;
+	}
+
+	&__item {
+		padding: 1.5rem;
+	}
+
+	&__item:nth-child(1) {
+		margin-bottom: 16px;
+	}
+
+	&__h5 {
+		padding-bottom: 1rem;
 	}
 }
 
@@ -180,6 +223,10 @@
 
 	&__item:nth-child(3) {
 		margin: 0;
+	}
+
+	&__col {
+		width: 40%;
 	}
 
 	&__h5 {
