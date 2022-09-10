@@ -1,0 +1,86 @@
+@use "../base/variables" as *;
+
+.btn-sm {
+	border-radius: 2.5rem;
+	padding: 0.625rem 1.5rem;
+}
+
+.btn-md {
+	border-radius: 2.5rem;
+	padding: 0.75rem 2rem;
+}
+
+.btn-large {
+	border-radius: 2.5rem;
+	padding: 0.75rem 8rem;
+}
+
+.btn-100 {
+	padding: 0.75rem;
+	width: 100%;
+	border-radius: 2.5rem;
+}
+
+.btn-40 {
+	padding: 10px;
+	width: 40%;
+	border-radius: 2.5rem;
+}
+
+.btn-black {
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.btn-white {
+	background-color: var(--white);
+	color: var(--green-2);
+}
+
+.btn-yellow {
+	background-color: none;
+	color: var(--yellow-3);
+	border: solid 1px transparent;
+}
+
+.btn-yellow:hover {
+	border: solid 1px var(--yellow-3);
+}
+
+.btn-green {
+	background-color: var(--green-2);
+	color: var(--white);
+	border: 1px solid var(--green-2);
+}
+
+.btn-border-back {
+	background-color: var(--white);
+	color: var(--black);
+	border: 1px solid var(--black);
+}
+
+.btn-border-back:hover {
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.btn-noborder-black {
+	background-color: var(--white);
+	color: var(--black);
+	border: 1px solid var(--white);
+}
+
+.btn-noborder-black:hover {
+	border: 1px solid var(--black);
+}
+
+.btn-noborder-white {
+	background-color: none;
+	color: var(--white);
+	text-decoration: underline;
+	border: 1px solid transparent;
+}
+
+.btn-noborder-white:hover {
+	border: 1px solid var(--white);
+}
