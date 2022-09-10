@@ -45,7 +45,8 @@ a {
 	text-transform: uppercase;
 }
 
-.hero__h4 {
+.hero__h4,
+.cta__h4 {
 	font-family: GT America, Arial, sans-serif;
 }
 
@@ -64,12 +65,6 @@ a {
 .footer__p {
 	font-size: 1.125rem;
 	line-height: 1.4963rem;
-}
-
-.reviews__p {
-	font-size: 1.125rem;
-	line-height: 1.4963rem;
-	font-weight: 700;
 }
 
 .pricing__highlighted {
