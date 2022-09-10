@@ -83,15 +83,23 @@
 .scroll {
 	width: 100%;
 	overflow-x: hidden;
+	background-color: var(--yellow-1);
+	border-bottom: 1px solid var(--black);
 
 	&__ul {
 		display: flex;
+	}
+
+	&__li {
+		font-size: 50px;
+		padding: 40px;
 	}
 }
 
 .badges {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+	background-color: var(--yellow-4);
 
 	&__container {
 		display: flex;
@@ -138,10 +146,16 @@
 
 	&__h3 {
 		padding-bottom: 1rem;
+		color: var(--green-2);
+	}
+
+	&__span {
+		color: var(--green-2);
 	}
 
 	&__sub-h3 {
 		padding-bottom: 2rem;
+		max-width: 46.25rem;
 	}
 
 	&__row {
@@ -162,14 +176,23 @@
 .submi {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
 	&__h3 {
 		padding-bottom: 1rem;
+		color: var(--green-2);
 	}
 
 	&__line {
 		padding-top: 0.5rem;
 		padding-bottom: 1.5rem;
+		padding-right: auto;
+	}
+
+	&__svg {
+		max-width: 27rem;
+		fill: none;
+		margin-right: 20px;
 	}
 
 	&__col {
@@ -178,6 +201,8 @@
 
 	&__item {
 		padding: 1.5rem;
+		border-radius: 3px;
+		background-color: var(--yellow-2);
 	}
 
 	&__item:nth-child(1) {
@@ -186,25 +211,60 @@
 
 	&__h5 {
 		padding-bottom: 1rem;
+		color: var(--green-2);
 	}
 }
 
 .talking {
 	width: 100%;
+	border-top: 1px solid var(--black);
 	overflow-x: hidden;
+	background-color: var(--yellow-1);
+	padding: 16px 0;
 
 	&__ul {
+		padding: 0 1.5rem;
+
 		display: flex;
+		gap: 3rem;
+	}
+
+	&__h4 {
+		color: var(--green-2);
+		white-space: nowrap;
+		text-transform: uppercase;
 	}
 }
 
 .testimonials {
 	padding-top: 6rem;
 	padding-bottom: 6rem;
+	background-color: var(--green-1);
+
+	&__container {
+		width: 58%;
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
 
 	&__item {
 		padding: 4rem 5rem;
 		margin-bottom: 3rem;
+		background-image: url("../../assets/images/testimonial-bg.svg");
+		background-size: cover;
+		background-position: 50% center;
+		background-repeat: no-repeat;
+		min-height: 23.75rem;
+		max-width: 752px;
+		color: var(--green-2);
+
+		position: relative;
+
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 	}
 
 	&__h4 {
@@ -213,6 +273,14 @@
 
 	&__p {
 		padding-bottom: 1.5rem;
+	}
+
+	&__img {
+		width: 11.25rem;
+		border-radius: 50%;
+		position: absolute;
+		right: -3.75rem;
+		bottom: -3.75rem;
 	}
 }
 

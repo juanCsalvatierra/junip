@@ -37,6 +37,18 @@
 		flex-direction: column;
 	}
 
+	.testimonials {
+		&__container {
+			width: 80%;
+		}
+
+		&__img {
+			position: static;
+			width: 6.25rem;
+			margin-top: 1rem;
+		}
+	}
+
 	.cta {
 		&__container {
 			flex-direction: column;
@@ -114,6 +126,10 @@
 		}
 	}
 
+	.testimonials__container {
+		width: 100%;
+	}
+
 	.reviews {
 		&__container {
 			flex-direction: column;
@@ -145,6 +161,11 @@
 }
 
 @media screen and (max-width: 576px) {
+	.container {
+		padding-left: 0.75rem;
+		padding-right: 0.75rem;
+	}
+
 	.features__grid {
 		grid-template-columns: 1fr;
 	}
