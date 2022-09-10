@@ -8,75 +8,93 @@
 		<link rel="stylesheet" href="./css/app.css" />
 	</head>
 	<body>
-		<header class="header container">
-			<div class="header__left left">
-				<nav class="left__nav">
-					<ul class="left__ul">
-						<img
-							src="./assets/images/logo.svg"
-							alt="Junip logo"
-							class="left__logo"
-							loading="lazy"
-						/>
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__left left">
+					<nav class="left__nav">
+						<ul class="left__ul">
+							<h1 class="header__h1">
+								<img
+									src="./assets/images/logo.svg"
+									alt="Junip logo"
+									class="left__logo"
+									loading="lazy"
+								/>
+							</h1>
 
-						<li class="left__li">
-							<a href="#" class="Customers" title="Customers">Customers</a>
-						</li>
+							<li class="left__li">
+								<a href="#" class="Customers" title="Customers">Customers</a>
+							</li>
 
-						<li class="left__li">
-							<a href="#" class="left__a" title="Pricing">Pricing</a>
-						</li>
+							<li class="left__li">
+								<a href="#" class="left__a" title="Pricing">Pricing</a>
+							</li>
 
-						<li class="left__li">
-							<a href="#" class="left__a" title="Partners">Partners</a>
-						</li>
+							<li class="left__li">
+								<a href="#" class="left__a" title="Partners">Partners</a>
+							</li>
 
-						<li class="left__li">
-							<a href="#" class="left__a" title="Integrations">Integrations</a>
-						</li>
+							<li class="left__li">
+								<a href="#" class="left__a" title="Integrations"
+									>Integrations</a
+								>
+							</li>
 
-						<li class="left__li">
-							<a href="#" class="left__a" title="Blog">Blog</a>
-						</li>
+							<li class="left__li">
+								<a href="#" class="left__a" title="Blog">Blog</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__right right">
+					<button class="btn-sm btn-noborder-black header__btn-signin">
+						<a href="#" class="btn-a">sign in</a>
+					</button>
+					<button class="btn-sm btn-black header__btn-signup">
+						<a href="#" class="btn-a">sign up</a>
+					</button>
+				</div>
+
+				<div class="header__mobile mobile">
+					<ul class="mobile__menu">
+						<li class="mobile__li">item 1</li>
+						<li class="mobile__li">item 2</li>
+						<li class="mobile__li">item 3</li>
+						<li class="mobile__li">item 4</li>
+						<li class="mobile__li">item 5</li>
+						<li class="mobile__li">item 6</li>
 					</ul>
-				</nav>
-			</div>
-			<div class="header__right right">
-				<button class="btn-sm btn-noborder-black">
-					<a href="#" class="btn-a">sign in</a>
-				</button>
-				<button class="btn-sm btn-black">
-					<a href="#" class="btn-a">sign up</a>
-				</button>
-			</div>
-
-			<div class="header__mobile mobile">
-				<ul class="mobile__menu">
-					<li class="mobile__li">item 1</li>
-					<li class="mobile__li">item 2</li>
-					<li class="mobile__li">item 3</li>
-					<li class="mobile__li">item 4</li>
-					<li class="mobile__li">item 5</li>
-					<li class="mobile__li">item 6</li>
-				</ul>
+				</div>
 			</div>
 		</header>
 
 		<main class="main">
 			<section class="hero">
 				<div class="hero__container container">
-					<h1 class="hero__h1">
-						<span class="hero__span">Reviews for products</span>
-						<span class="hero__span">worth talking about</span>
-					</h1>
-					<img class="hero__line" src="#" alt="line" />
+					<h2 class="hero__h2-top">Reviews for products</h2>
+					<h2 class="hero__h2-bottom">worth talking about</h2>
+					<div class="hero__line">
+						<svg
+							fill="none"
+							height="15"
+							viewBox="0 0 471 15"
+							width="471"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="m471 9.75c-19.389 0-30.979-2.216-41.684-4.44739-10.793-2.24987-20.831-4.55261-36.816-4.55261v5c15.415 0 25.002 2.19726 35.796 4.4474 10.883 2.2686 22.843 4.5526 42.704 4.5526zm-78.5-9c-19.885 0-29.9 2.29113-39.809 4.56324-9.716 2.22789-19.326 4.43676-38.691 4.43676v5c19.885 0 29.9-2.2911 39.809-4.5632 9.716-2.22793 19.326-4.4368 38.691-4.4368zm-78.5 9c-19.365 0-28.975-2.20887-38.691-4.43676-9.909-2.27211-19.924-4.56324-39.809-4.56324v5c19.365 0 28.975 2.20887 38.691 4.4368 9.909 2.2721 19.924 4.5632 39.809 4.5632zm-78.5-9c-19.885 0-29.9 2.29113-39.809 4.56324-9.716 2.22789-19.326 4.43676-38.691 4.43676v5c19.885 0 29.9-2.2911 39.809-4.5632 9.716-2.22793 19.326-4.4368 38.691-4.4368zm-78.5 9c-19.365 0-28.975-2.20887-38.691-4.43676-9.909-2.27211-19.924-4.56324-39.809-4.56324v5c19.3649 0 28.975 2.20887 38.691 4.4368 9.909 2.2721 19.924 4.5632 39.809 4.5632zm-78.5-9c-19.8851 0-29.8998 2.29113-39.8087 4.56324-9.7161 2.22789-19.3264 4.43676-38.6913 4.43676v5c19.885 0 29.8998-2.2911 39.8087-4.5632 9.7161-2.22793 19.3263-4.4368 38.6913-4.4368z"
+								fill="#2eb673"
+							></path>
+						</svg>
+					</div>
+
 					<h4 class="hero__h4">
 						Join 3,000+ brands who gather more reviews &amp; display them
 						everywhere that matters, with Junip
 					</h4>
 					<div class="hero__button">
 						<button class="btn-md btn-black">
-							<a href="#" class="btn-a">start now</a>
+							<a href="#" class="btn-a btn-a--24">start now</a>
 						</button>
 						<button class="btn-md btn-noborder-black">
 							<a href="#" class="btn-a">contact sales</a>
