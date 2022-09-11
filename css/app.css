@@ -408,18 +408,28 @@ a {
   justify-content: center;
 }
 
-.scroll {
+.carousel {
   width: 100%;
+  height: 140px;
   overflow-x: hidden;
   background-color: var(--yellow-1);
   border-bottom: 1px solid var(--black);
-}
-.scroll__ul {
+  position: relative;
   display: flex;
+  align-items: center;
 }
-.scroll__li {
-  font-size: 50px;
-  padding: 40px;
+.carousel__ul {
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel__li {
+  font-size: 40px;
+  padding: 0 67px;
+}
+.carousel__icon {
+  min-width: 80px;
 }
 
 .badges {
