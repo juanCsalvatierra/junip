@@ -1,7 +1,4 @@
-let flag = 0;
-
 window.onload = main;
-window.onresize = main;
 
 function main() {
 	const $container = document.querySelector(".carousel");
@@ -9,32 +6,20 @@ function main() {
 	const width = $ul.offsetWidth;
 	const speed = 1;
 
-	if (flag !== 1) {
-		clone($ul, $container, width);
-		flag = 1;
-	} else {
-		removeClone();
-		clone($ul, $container, width);
-	}
-
-	carousel($ul, width, speed);
+	const $ulClone = cloneUl($ul, $container, width);
+	carousel($ul, $ulClone, width, speed);
 }
 
-function clone($ul, $container, width) {
+function cloneUl($ul, $container, width) {
 	const $ul2 = $ul.cloneNode(true);
 	$container.appendChild($ul2);
 	$ul2.style.left = `${width}px`;
 	$ul2.classList.add("carousel__ul-clone");
+
+	return $ul2;
 }
 
-function removeClone() {
-	const $ulRemove = document.querySelector(".carousel__ul-clone");
-	$ulRemove.parentNode.removeChild($ulRemove);
-}
-
-function carousel($ul, width, speed) {
-	const $ul2 = document.querySelector(".carousel__ul-clone");
-
+function carousel($ul, $ulClone, width, speed) {
 	let x = 0;
 	let x2 = width;
 
@@ -51,8 +36,8 @@ function carousel($ul, width, speed) {
 	function moveSecond() {
 		x2 -= speed;
 
-		if ($ul2.offsetWidth >= Math.abs(x2)) {
-			$ul2.style.left = `${x2}px`;
+		if ($ulClone.offsetWidth >= Math.abs(x2)) {
+			$ulClone.style.left = `${x2}px`;
 		} else {
 			x2 = width;
 		}
