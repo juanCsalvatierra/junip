@@ -287,6 +287,10 @@ a {
   color: var(--white);
 }
 
+.btn-black:hover {
+  filter: brightness(160%);
+}
+
 .btn-white {
   background-color: var(--white);
   color: var(--green-2);
@@ -306,6 +310,10 @@ a {
   background-color: var(--green-2);
   color: var(--white);
   border: 1px solid var(--green-2);
+}
+
+.btn-green:hover {
+  filter: brightness(90%);
 }
 
 .btn-border-back {
@@ -422,6 +430,19 @@ a {
 .hero {
   padding-top: 7rem;
   padding-bottom: 7rem;
+  animation: fadeInUp 0.4s cubic-bezier(0, 0, 0.2, 1) 0.55s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .hero__h2-top {
   padding-bottom: 0.25rem;

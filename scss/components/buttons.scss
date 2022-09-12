@@ -32,6 +32,10 @@
 	color: var(--white);
 }
 
+.btn-black:hover {
+	filter: brightness(160%);
+}
+
 .btn-white {
 	background-color: var(--white);
 	color: var(--green-2);
@@ -51,6 +55,10 @@
 	background-color: var(--green-2);
 	color: var(--white);
 	border: 1px solid var(--green-2);
+}
+
+.btn-green:hover {
+	filter: brightness(90%);
 }
 
 .btn-border-back {
