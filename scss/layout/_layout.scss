@@ -125,7 +125,7 @@
 		padding-bottom: 2rem;
 	}
 
-	&__button {
+	&__buttons {
 		display: flex;
 		justify-content: center;
 	}
@@ -430,6 +430,10 @@
 		background-color: var(--green-2);
 	}
 
+	&__h6 {
+		padding-bottom: 1rem;
+	}
+
 	&__item {
 		padding: 3rem;
 		background-color: var(--yellow-4);
@@ -564,12 +568,18 @@
 	overflow-x: hidden;
 
 	&__h2 {
+		max-width: 46.875rem;
 		padding-bottom: 3rem;
 		text-align: center;
+		margin: 0 auto;
 	}
 
-	&__hr {
-		padding-bottom: 3rem;
+	&__line {
+		max-width: 21.875rem;
+		height: 4px;
+		background-color: var(--green-1);
+		margin: 0 auto 3rem auto;
+		border-radius: 4px;
 	}
 
 	&__wrapper {
