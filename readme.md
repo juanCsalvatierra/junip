@@ -1,6 +1,6 @@
 # JUNIP
 
-This page is a clone of junip.co made with css and javascript.
+This page is a clone of junip.co made with SASS and Javascript.
 
 ## Design
 
