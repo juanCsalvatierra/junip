@@ -115,6 +115,34 @@
 }
 
 @media screen and (max-width: 768px) {
+	.burger {
+		padding-left: 1rem;
+
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		cursor: pointer;
+	}
+
+	.bar {
+		width: 1.5rem;
+		height: 3px;
+		transition: all 0.3s ease-in-out;
+		background-color: var(--black);
+	}
+
+	.burger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	.burger.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.burger.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
 	.left__li {
 		display: none;
 	}

@@ -8,6 +8,7 @@ function main() {
 
 	const $ulClone = cloneUl($ul, $container, width);
 	carousel($ul, $ulClone, width, speed);
+	burgerMenu();
 }
 
 function cloneUl($ul, $container, width) {
@@ -45,4 +46,14 @@ function carousel($ul, $ulClone, width, speed) {
 
 	setInterval(moveFirst, 10);
 	setInterval(moveSecond, 10);
+}
+
+function burgerMenu() {
+	const burger = document.querySelector(".burger");
+	const container = document.querySelector(".mobile");
+
+	burger.addEventListener("click", () => {
+		burger.classList.toggle("active");
+		container.classList.toggle("active");
+	});
 }
