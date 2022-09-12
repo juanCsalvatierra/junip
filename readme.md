@@ -1,4 +1,4 @@
-# INTEO
+# JUNIP
 
 This page is a clone of junip.co made with css and javascript.
 
